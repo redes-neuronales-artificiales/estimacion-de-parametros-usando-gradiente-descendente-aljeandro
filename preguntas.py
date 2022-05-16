@@ -53,7 +53,7 @@ def pregunta_02():
         error = y_pred - y
 
         # Calcule el gradiente
-        gradient = np.dot(x_poly, error) / 20
+        gradient = np.dot(x_poly, error)
 
         # Actualice los parámetros
         params = params - learning_rate * gradient
